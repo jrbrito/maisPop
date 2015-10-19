@@ -2,6 +2,30 @@ import easyaccept.EasyAccept;
 
 public class Facade {
 
+
+    protected PlusPop sistema;
+
+    public void iniciaSistema() {
+
+        this.sistema = new PlusPop();
+    }
+
+    public void logout() {
+
+    }
+
+    public void fechaSistema() {
+
+    }
+
+    public void cadastraUsuario() {
+
+    }
+
+    public void getInfoUsuario() {
+
+    }
+
     public static void main(String[] args) {
         args = new String[] {
                 "Facade",
@@ -14,10 +38,6 @@ public class Facade {
         EasyAccept.main(args);
 
     }
-    public void iniciaSistema() {
 
-        System.out.println("deu certo");
-
-    }
 
 }
