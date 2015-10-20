@@ -24,7 +24,6 @@ public class Facade {
                                 String dataNasc,
                                 String imagem) throws Exception {
 
-        try {
 
             if (sistema.findUsuario(email) == null) {
 
@@ -39,13 +38,6 @@ public class Facade {
                 sistema.attachUser(newUser);
 
             }
-
-        } catch (Exception e) {
-
-            e.getMessage();
-            e.printStackTrace();
-        }
-
     }
 
     public void cadastraUsuario(String nome,
@@ -54,7 +46,6 @@ public class Facade {
                                 String dataNasc
                                 ) throws Exception {
 
-        try {
 
             if (sistema.findUsuario(email) == null) {
 
@@ -68,13 +59,6 @@ public class Facade {
                 sistema.attachUser(newUser);
 
             }
-
-        } catch (Exception e) {
-
-            e.getMessage();
-            e.printStackTrace();
-        }
-
     }
 
     public void getInfoUsuario() {

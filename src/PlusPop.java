@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
+
 /**
  * Created by bruno on 19/10/15.
  */
@@ -28,17 +29,8 @@ public class PlusPop {
 
     public void userLogin(User user) throws Exception {
 
-        try {
-
             User usuario = findUsuario(user.getEmail());
             usuario.setOnline(true);
-
-        } catch (Exception e) {
-
-            e.getMessage();
-            e.printStackTrace();
-
-        }
     }
 
     public ArrayList<User> getUsuarios() {

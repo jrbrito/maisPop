@@ -23,8 +23,17 @@ public class User {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String nome) throws Exception {
+
+        if (nome == null || nome.isEmpty() || nome.trim().isEmpty()) {
+
+             throw new Exception("Erro no cadastro de Usuarios. Nome dx usuarix nao pode ser vazio.");
+
+        } else {
+
+            this.nome = nome;
+
+        }
     }
 
     public String getEmail() {
