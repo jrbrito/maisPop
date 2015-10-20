@@ -9,6 +9,15 @@ public class User {
     protected String dataNasc;
     protected String imagem;
     protected String nome;
+    protected boolean online;
+
+    public boolean isOnline() {
+        return online;
+    }
+
+    public void setOnline(boolean online) {
+        this.online = online;
+    }
 
     public String getNome() {
         return nome;
