@@ -10,13 +10,18 @@ public class Facade {
         this.sistema = new PlusPop();
     }
 
-    public void logout() {
+    public void login(User user) throws Exception {
+
+        sistema.userLogin(user);
 
     }
 
-    public void fechaSistema() {
+    public void logout(User user) throws Exception {
+
+        sistema.userLogout(user);
 
     }
+
 
     public void cadastraUsuario(String nome,
                                 String email,
@@ -61,7 +66,13 @@ public class Facade {
             }
     }
 
-    public void getInfoUsuario() {
+    public void getInfoUsuario(String atributo, User user) throws Exception {
+
+        sistema.userDetails(atributo, user.getEmail());
+
+    }
+
+    public void fechaSistema() {
 
     }
 
@@ -77,6 +88,7 @@ public class Facade {
         EasyAccept.main(args);
 
     }
+
 
 
 }

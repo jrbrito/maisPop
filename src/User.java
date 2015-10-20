@@ -33,7 +33,7 @@ public class User {
 
         if (nome == null || nome.isEmpty() || nome.trim().isEmpty()) {
 
-             throw new Exception("Erro no cadastro de Usuarios. Nome dx usuarix nao pode ser vazio.");
+            throw new Exception("Erro no cadastro de Usuarios. Nome dx usuarix nao pode ser vazio.");
 
         } else {
 
