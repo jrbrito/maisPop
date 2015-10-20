@@ -18,7 +18,62 @@ public class Facade {
 
     }
 
-    public void cadastraUsuario() {
+    public void cadastraUsuario(String nome,
+                                String email,
+                                String senha,
+                                String dataNasc,
+                                String imagem) throws Exception {
+
+        try {
+
+            if (sistema.findUsuario(email) == null) {
+
+                User newUser = new User();
+
+                newUser.setNome(nome);
+                newUser.setEmail(email);
+                newUser.setSenha(senha);
+                newUser.setDataNasc(dataNasc);
+                newUser.setImagem(imagem);
+
+                sistema.attachUser(newUser);
+
+            }
+
+        } catch (Exception e) {
+
+            e.getMessage();
+            e.printStackTrace();
+        }
+
+    }
+
+    public void cadastraUsuario(String nome,
+                                String email,
+                                String senha,
+                                String dataNasc
+                                ) throws Exception {
+
+        try {
+
+            if (sistema.findUsuario(email) == null) {
+
+                User newUser = new User();
+
+                newUser.setNome(nome);
+                newUser.setEmail(email);
+                newUser.setSenha(senha);
+                newUser.setDataNasc(dataNasc);
+
+                sistema.attachUser(newUser);
+
+            }
+
+        } catch (Exception e) {
+
+            e.getMessage();
+            e.printStackTrace();
+        }
 
     }
 

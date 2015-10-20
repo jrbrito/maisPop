@@ -14,7 +14,7 @@ public class PlusPop {
         userLoggedIn = null;
     }
 
-    public void cadastraUsuario(User user) throws Exception {
+    public void attachUser(User user) throws Exception {
 
         try {
 
