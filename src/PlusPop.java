@@ -1,7 +1,4 @@
-import java.io.IOException;
 import java.util.ArrayList;
-
-
 /**
  * Created by bruno on 19/10/15.
  */
@@ -34,7 +31,6 @@ public class PlusPop {
     }
 
     public ArrayList<User> getUsuarios() {
-
         return users;
     }
 
